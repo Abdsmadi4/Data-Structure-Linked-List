@@ -71,7 +71,31 @@ class LinkedList {
       return;
     }
   }
-  
+
+  insertAt(value, idx) {
+    const newNode = new Node(value);
+    if (this.size() === 0) {
+      this.head = newNode;
+    } else {
+      if (idx === 0) {
+        this.insertAtBeginning(value);
+      } else if (idx > this.size()) {
+        this.insertAtLast(value);
+      } else {
+        let count = 0;
+        let current = this.head;
+        while (current) {
+          if (count === idx - 1) {
+            newNode.next = current.next;
+            current.next = newNode;
+            break;
+          }
+          current = current.next;
+          count++;
+        }
+      }
+    }
+  }
 }
 
 module.exports = LinkedList;
