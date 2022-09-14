@@ -1,0 +1,19 @@
+{
+  "name": "data-structure-linked-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ll.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdsmadi4/Data-Structure-Linked-List.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abdsmadi4/Data-Structure-Linked-List/issues"
+  },
+  "homepage": "https://github.com/Abdsmadi4/Data-Structure-Linked-List#readme"
+}
